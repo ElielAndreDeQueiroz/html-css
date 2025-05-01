@@ -86,9 +86,8 @@ article > p {
 
 article > ul {
     list-style-position: inside;
-    padding-bottom: 20px;
     background-image: linear-gradient(to left, darkgray, gray);
-    padding: 10px;
+    font-size: 0.9em;
     margin: 0px -10px 30px -10px;
     padding: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.548);
