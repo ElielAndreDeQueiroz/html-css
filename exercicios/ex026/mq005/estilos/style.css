@@ -9,6 +9,7 @@
 
 html, body {
     background-color: lightgray;
+    font-size: 1.2em;
 }
 
 header {
@@ -62,7 +63,6 @@ main {
 }
 
 main h2 {
-    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -99,7 +99,7 @@ ul > li {
     margin: 5.5px 0px;
     text-align: justify;
     text-indent: 30px;
-    font-size: 1em;
+    font-size: 0.7em;
     line-height: 2em;
 }
 
