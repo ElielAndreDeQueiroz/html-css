@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root {
+    --cor0: #CCAC2B;
+    --cor1: #99873F;
+    --cor2: #FFCD03;
+    --cor3: #665E3E;
+    --cor4: #333129;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -8,12 +16,12 @@
 }
 
 html, body {
-    background-color: lightgray;
+    background-color: var(--cor1);
     font-size: 1.2em;
 }
 
 header {
-    background-color: gray;
+    background-color: var(--cor3);
 }
 
 header > h1 {
@@ -22,7 +30,7 @@ header > h1 {
 }
 
 i#burguer {
-    background-color: rgb(48, 48, 48);
+    background-color: var(--cor4);
     color: white;
     display: block;
     text-align: center;
@@ -75,7 +83,12 @@ main p {
 }
 
 article > h2 {
+    color: var(--cor4);
+    padding-top: 10px;
+    padding-left: 10px;
     padding-bottom: 20px;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    margin: 0px -10px 30px -10px;
 }
 
 article > p {
@@ -84,50 +97,79 @@ article > p {
     text-align: 20px;
 }
 
-article > ul {
+article ul {
     list-style-position: inside;
-    background-image: linear-gradient(to left, darkgray, gray);
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+
+    height: 500px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+article ul.imgul {
+    list-style-type: none;
+}
+
+li > p {
+    box-shadow: inset 6px 6px 20px 5px black;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: inline-block;
     font-size: 0.9em;
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+    margin:25px 5px;
+}
+
+section#img01 {
     margin: 0px -10px 30px -10px;
-    padding: 20px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.548);
-    }
-
-
-ul > li {
-    font-weight: bold;
-    margin: 5.5px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 0.7em;
-    line-height: 2em;
+    background-image: url('../imagens/queijo-650.jpg');
+    background-position: right center;
 }
 
 aside {
-    background-color: gray;
+    background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
 
 aside > h3 {
-    background-color: gray;
-    color: white;
+    background-color: var(--cor1);
+    color: var(--cor4);
     padding: 5px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
 
-aside > ul {
+ul#aside {
     list-style-type: none;
     columns: 2;
-    background-color: darkgray;
+    background-color: var(--cor0);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
 
 aside a {
     list-style-type: none;
-    color: rgb(126, 92, 7);
+    color: black;
+    text-decoration: none;
+}
+
+aside a:hover {
+    transition: transform 1s, color 0.5s;
+    color: var(--cor2);
+}
+
+abbr {
     text-decoration: none;
 }
 
@@ -147,5 +189,5 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: blue;
+    color: yellow;
 }
